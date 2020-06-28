@@ -34,7 +34,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Categories" id="VP6-Tx-wQP">
+                    <navigationItem key="navigationItem" title="Categories" prompt="todo_rishabh_777248" id="VP6-Tx-wQP">
                         <rightBarButtonItems>
                             <barButtonItem image="plus.square.fill.on.square.fill" catalog="system" style="plain" id="wEB-aS-TAM">
                                 <connections>
