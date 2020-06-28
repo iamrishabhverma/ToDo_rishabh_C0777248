@@ -1,24 +1,25 @@
 //
 //  ViewController.swift
-//  todo_rishabh_777248
+//  NoteAppFinalProject IOS
 //
-//  Created by Rishabh Verma on 2020-06-23.
-//  Copyright © 2020 Rishabh Verma. All rights reserved.
+//  Created by User on 6/17/20.
+//  Copyright © 2020 Simranjeet kaur. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func addtask(_ sender: UIButton) {
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        
+        
+        
     }
 
-    
+
 }
 
