@@ -15,7 +15,7 @@
 		A6C05A7824A1ED4C009CA528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C05A7724A1ED4C009CA528 /* Assets.xcassets */; };
 		A6C05A7B24A1ED4C009CA528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C05A7924A1ED4C009CA528 /* LaunchScreen.storyboard */; };
 		A6C05A8424A1FDB4009CA528 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C05A8224A1FDB4009CA528 /* CategoryTableViewController.swift */; };
-		A6F9881524A7432200794C06 /* Project_IOS_datamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6F9881324A7432200794C06 /* Project_IOS_datamodel.xcdatamodeld */; };
+		A6F68C5224A87406004B76DB /* Project_IOS_datamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6F68C5024A87406004B76DB /* Project_IOS_datamodel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		A6C05A7A24A1ED4C009CA528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6C05A7C24A1ED4C009CA528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6C05A8224A1FDB4009CA528 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
-		A6F9881424A7432200794C06 /* Project_IOS_datamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_IOS_datamodel.xcdatamodel; sourceTree = "<group>"; };
+		A6F68C5124A87406004B76DB /* Project_IOS_datamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_IOS_datamodel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +62,34 @@
 		A6C05A6A24A1ED47009CA528 /* todo_rishabh_777248 */ = {
 			isa = PBXGroup;
 			children = (
+				A6F9881924A86F7100794C06 /* Model */,
+				A6F9881824A86F5200794C06 /* Controllers */,
 				A6C05A6B24A1ED47009CA528 /* AppDelegate.swift */,
+				A6C05A7124A1ED47009CA528 /* Main.storyboard */,
+				A6C05A7724A1ED4C009CA528 /* Assets.xcassets */,
+				A6C05A7924A1ED4C009CA528 /* LaunchScreen.storyboard */,
+				A6C05A7C24A1ED4C009CA528 /* Info.plist */,
+			);
+			path = todo_rishabh_777248;
+			sourceTree = "<group>";
+		};
+		A6F9881824A86F5200794C06 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				A6C05A6D24A1ED47009CA528 /* SceneDelegate.swift */,
 				A6C05A6F24A1ED47009CA528 /* EditNotesViewController.swift */,
 				A6C05A8224A1FDB4009CA528 /* CategoryTableViewController.swift */,
 				A613978924A5E50B00C539D0 /* NotesTableViewController.swift */,
-				A6C05A7124A1ED47009CA528 /* Main.storyboard */,
-				A6C05A7724A1ED4C009CA528 /* Assets.xcassets */,
-				A6C05A7924A1ED4C009CA528 /* LaunchScreen.storyboard */,
-				A6F9881324A7432200794C06 /* Project_IOS_datamodel.xcdatamodeld */,
-				A6C05A7C24A1ED4C009CA528 /* Info.plist */,
 			);
-			path = todo_rishabh_777248;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A6F9881924A86F7100794C06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6F68C5024A87406004B76DB /* Project_IOS_datamodel.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +165,10 @@
 			files = (
 				A6C05A8424A1FDB4009CA528 /* CategoryTableViewController.swift in Sources */,
 				A6C05A7024A1ED47009CA528 /* EditNotesViewController.swift in Sources */,
+				A6F68C5224A87406004B76DB /* Project_IOS_datamodel.xcdatamodeld in Sources */,
 				A613978A24A5E50B00C539D0 /* NotesTableViewController.swift in Sources */,
 				A6C05A6C24A1ED47009CA528 /* AppDelegate.swift in Sources */,
 				A6C05A6E24A1ED47009CA528 /* SceneDelegate.swift in Sources */,
-				A6F9881524A7432200794C06 /* Project_IOS_datamodel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,14 +366,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A6F9881324A7432200794C06 /* Project_IOS_datamodel.xcdatamodeld */ = {
+		A6F68C5024A87406004B76DB /* Project_IOS_datamodel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A6F9881424A7432200794C06 /* Project_IOS_datamodel.xcdatamodel */,
+				A6F68C5124A87406004B76DB /* Project_IOS_datamodel.xcdatamodel */,
 			);
-			currentVersion = A6F9881424A7432200794C06 /* Project_IOS_datamodel.xcdatamodel */;
+			currentVersion = A6F68C5124A87406004B76DB /* Project_IOS_datamodel.xcdatamodel */;
 			name = Project_IOS_datamodel.xcdatamodeld;
-			path = "../../../Documents/NoteAppFinalProject-IOS/NoteAppFinalProject IOS/Project_IOS_datamodel.xcdatamodeld";
+			path = "../../../../Documents/NoteAppFinalProject-IOS/NoteAppFinalProject IOS/Project_IOS_datamodel.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
