@@ -297,7 +297,7 @@ class NotesTableViewController: UITableViewController, UISearchResultsUpdating {
 
                   return cell
                   }
-
+            
         }
         
 
