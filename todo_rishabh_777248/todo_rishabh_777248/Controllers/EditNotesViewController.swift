@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import MapKit
+import UserNotifications
 import AVFoundation
 
 class EditNotesViewController: UIViewController,  UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate{
@@ -33,9 +34,9 @@ class EditNotesViewController: UIViewController,  UINavigationControllerDelegate
         
   
 
-    
-    
-    
+   
+   
+          
     override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -141,14 +142,29 @@ class EditNotesViewController: UIViewController,  UINavigationControllerDelegate
                      }
         
         
+        let center = UNUserNotificationCenter.current()
+        let content =  UNMutableNotificationContent()
+        content.title = "Reminder"
+        content.body = "Local notification"
+        content.sound = .default
+        
+      
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "Reminder", content: content, trigger: trigger)
+        center.add(request)
+        {
+            (error) in
+            if error != nil{
+                print("Error =\(error?.localizedDescription ?? "error local notification")")
+            }
+         
+    
         
         
         
         
-        
-        
-        
-        
+    }
         
         
         
